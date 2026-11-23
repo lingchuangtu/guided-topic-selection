@@ -1,4 +1,18 @@
-# 一键安装指令（复制下面整段，发给 WorkBuddy / Claude）
+# 一键安装指令
+
+## 方式一：一句话安装（推荐）
+
+把下面这句话发给 WorkBuddy / Claude / 豆包等任意 AI：
+
+```text
+帮我安装github上的 lingchuangtu/guided-topic-selection
+```
+
+AI 会自动读取该仓库的 `SKILL.md` 并安装到 skills 目录。不需要 git、不需要命令行。
+
+---
+
+## 方式二：自包含指令（AI 无法联网拉取仓库时用）
 
 把下面 ```text 代码块里的**全部内容**复制，粘贴到 WorkBuddy 对话框，发送即可。AI 会自动创建 Skill 文件、放到正确目录，并告诉你安装完成。
 

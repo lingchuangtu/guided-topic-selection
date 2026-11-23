@@ -4,9 +4,22 @@
 
 Works with WorkBuddy / Claude.
 
-## 一键安装（推荐）
+## 一句话安装（推荐）
 
-复制 [INSTALL.md](INSTALL.md) 中「请帮我在本地安装一个 WorkBuddy / Claude Skill」那段代码块的全部内容，粘贴到 WorkBuddy / Claude 对话框发送即可。AI 会自动把 Skill 写入 `~/.workbuddy/skills/guided-topic-selection/SKILL.md`。不需要 git、不需要命令行。
+把下面这句话发给 WorkBuddy / Claude / 豆包等任意 AI，即可自动安装：
+
+```text
+帮我安装github上的 lingchuangtu/guided-topic-selection
+```
+
+AI 会自动读取该仓库的 `SKILL.md`，安装到 skills 目录。不需要 git、不需要命令行。
+
+<details>
+<summary>AI 无法联网拉取仓库时，用这段自包含指令兜底</summary>
+
+复制 [INSTALL.md](INSTALL.md) 中「请帮我在本地安装一个 WorkBuddy / Claude Skill」那段代码块的全部内容，粘贴到对话框发送即可，不依赖 GitHub。
+
+</details>
 
 ## 核心约定
 
