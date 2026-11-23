@@ -1,0 +1,38 @@
+# 选题候选示例（占位数据，可复制后替换）
+# 注意：不要填写任何真实姓名、单位、邮箱、学号等身份信息。
+meta:
+  mode: "default"            # default | demo
+  online_search: false       # 仅用户明确要求时才改为 true
+  conclusion: "推荐推进"      # 推荐推进 | 有条件推进 | 暂缓 | 不建议推进
+
+candidates:
+  - id: R1
+    status: main              # main | backup | eliminated
+    title_zh: "示例：小样本图模型解释的稳定性验证框架"
+    title_en: "Stability-oriented explanation for few-shot graph models"
+    research_type: "实验"
+    evidence: "[论文证据] 论文A/论文C；[推断] 小样本条件留白"
+    crowding: "可切入"
+    nearest_work: "论文B（解释性不足）"
+    kill_test: "若已有工作在同一设定下完成扰动一致性检验，则本候选失效"
+    scores:
+      value: 4
+      novelty: 4
+      feasibility: 3
+      evidence_maturity: 3
+    next_action: "用公开小样本图数据集完成一轮扰动一致性预实验"
+  - id: B1
+    status: backup
+    title_zh: "示例：基于子图扰动的解释可信度评估"
+    title_en: "Trustworthiness evaluation of explanations via subgraph perturbation"
+    research_type: "方法学"
+    evidence: "[推断] 需要补充直接证据"
+    crowding: "拥挤"
+    nearest_work: "论文C"
+    kill_test: "若解释扰动指标已被系统覆盖，则收窄到特定场景"
+    scores:
+      value: 3
+      novelty: 2
+      feasibility: 4
+      evidence_maturity: 2
+    next_action: "清点论文集中是否已有同类评估协议"
